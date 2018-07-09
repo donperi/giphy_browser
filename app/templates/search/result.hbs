@@ -1,0 +1,26 @@
+<div class="result">
+  <div class="container-fluid">
+    {{images-grid onItemClick=(action "onItemClick") images=images}}
+  </div>
+
+
+  {{#if loadingMore}}
+    <div class="text-center">
+      Loading more...
+    </div>
+  {{/if}}
+
+  {{#if images}}
+    <div class="load-more">
+      <button class="btn btn btn-outline-primary" {{ action "loadMore" }}>Load More</button>
+    </div>
+  {{/if}}
+
+  {{
+      result-slideshow
+        selectedKey=selectedKey
+        onItemClear=(action "onItemClear")
+        selectImage=(action "selectImage")
+        images=images
+  }}
+</div>

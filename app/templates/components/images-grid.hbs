@@ -1,0 +1,7 @@
+<div class="grid">
+  {{#each images as |image k|}}
+    <div class="grid-item">
+      {{ image-item onClick=onItemClick selectedKey=k masonry=masonry image=image }}
+    </div>
+  {{/each}}
+</div>

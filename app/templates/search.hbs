@@ -1,0 +1,16 @@
+<section class="jumbotron text-center">
+  <div class="container">
+    <h1 class="jumbotron-heading">Giphy Browser</h1>
+
+    <form class="form" {{action "search" on="submit"}}>
+      <div class="input-group mb-3">
+        {{input type="text" name="q" value=search required=true class="form-control" placeholder="Search..."}}
+        <div class="input-group-append">
+          <button class="btn btn-primary">Search</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+{{outlet}}
