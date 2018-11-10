@@ -2,6 +2,8 @@
 
 Simple Giphy Browser build on Ember JS.
 
+[Demo](https://ember-giphy-browser.herokuapp.com)
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
